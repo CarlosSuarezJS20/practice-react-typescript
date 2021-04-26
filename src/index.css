@@ -1,7 +1,21 @@
-html {
-  font-family: sans-serif;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
-body {
-  margin: 0;
+html {
+  font-family: sans-serif;
+  min-width: 410px;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+img {
+  width: 100%;
+  display: block;
 }

@@ -1,0 +1,51 @@
+.hero-section {
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.6)),
+    url("../../../assets/images/pexels-junior-teixeira-2047905.jpg")
+      center/cover no-repeat;
+  height: 100vh;
+  padding: 45vh 0.5rem 0;
+}
+
+.hero-header {
+  text-align: center;
+}
+
+.hero-content {
+  margin: 0.5rem;
+}
+
+.hero-content h2 {
+  font-size: 2rem;
+  color: #ccc;
+}
+
+.hero-content p {
+  margin-top: 1rem;
+  color: #ccc;
+  font-size: 1.5rem;
+  line-height: 1.4rem;
+}
+
+.confucius {
+  font-weight: bold;
+}
+
+.logo-holder {
+  width: 150px;
+  margin: 0 auto;
+}
+
+@media (min-width: 600px) {
+  .hero-section {
+    background: linear-gradient(transparent, rgba(0, 0, 0, 0.6)),
+      url("../../../assets/images/pexels-rostislav-uzunov-5011647.jpg")
+        center/cover no-repeat;
+  }
+
+  .hero-content p {
+    margin-top: 1rem;
+    color: #ccc;
+    font-size: 1.5rem;
+    line-height: 1.4rem;
+  }
+}
