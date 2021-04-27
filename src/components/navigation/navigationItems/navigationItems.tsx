@@ -3,9 +3,13 @@ import "./navigationItems.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faDownload } from "@fortawesome/free-solid-svg-icons";
 
-const Toolbar: React.FC = () => {
+interface ToolbarProps {
+  open: boolean;
+}
+
+const Toolbar: React.FC<ToolbarProps> = (props) => {
   return (
-    <ul className="main-nav">
+    <ul className={props.open ? "main-nav open" : "main-nav"}>
       <li>
         <a>blog</a>
       </li>

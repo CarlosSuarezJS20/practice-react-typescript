@@ -1,0 +1,55 @@
+.surveybox-container {
+  background: rgba(119, 119, 119, 0.233);
+  padding: 1rem;
+  color: white;
+  text-transform: capitalize;
+  text-align: center;
+  line-height: 1.5rem;
+  border-radius: 10px;
+}
+
+.surveybox-container h2 {
+  text-align: center;
+  color: #5bc0de;
+}
+
+select {
+  margin-left: 1rem;
+  background: rgb(223, 223, 223);
+  text-transform: capitalize;
+  width: 90px;
+}
+
+button {
+  background: none;
+  width: 30%;
+  margin-top: 1rem;
+  margin-left: 70%;
+  padding: 0.2rem;
+  color: #5bc0de;
+  text-transform: capitalize;
+  font-size: 1em;
+  font-weight: bold;
+  border: 1px solid #5bc0de;
+  border-radius: 6px;
+  transition: background-color 0.5s, color 0.5s;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #5bc0de;
+  color: white;
+}
+
+@media (min-width: 890px) {
+  .surveybox-container {
+    width: 800px;
+    background: rgba(0, 0, 0, 0.432);
+    padding: 2rem;
+    color: white;
+    text-transform: capitalize;
+    text-align: left;
+    line-height: 2rem;
+    border-radius: 10px;
+  }
+}

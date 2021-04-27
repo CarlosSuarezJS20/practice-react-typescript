@@ -6,7 +6,11 @@
   left: 0;
   padding: 1.5rem;
   list-style: none;
-  /* display: none; */
+  display: none;
+}
+
+.open {
+  display: block;
 }
 
 .main-nav li {

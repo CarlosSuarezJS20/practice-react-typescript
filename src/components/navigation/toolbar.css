@@ -12,6 +12,12 @@
 .menu-icon {
   color: white;
   font-size: 2rem;
+  cursor: pointer;
+  transition: all 0.5s linear;
+}
+
+.menu-icon:hover {
+  transform: scale(1.2);
 }
 
 @media (min-width: 600px) {
