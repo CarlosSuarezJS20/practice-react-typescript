@@ -41,6 +41,17 @@ button:hover {
   color: white;
 }
 
+.loader-holder {
+  width: 80px;
+  margin: 4rem auto;
+}
+
+.total-participants {
+  text-align: right;
+  color: #ccc;
+  font-size: 0.6rem;
+}
+
 @media (min-width: 890px) {
   .surveybox-container {
     width: 800px;

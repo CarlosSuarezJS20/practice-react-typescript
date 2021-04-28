@@ -16,6 +16,7 @@
 
 .hero-content h2 {
   font-size: 1.5rem;
+  text-transform: uppercase;
   color: #ccc;
 }
 
@@ -23,7 +24,6 @@
   margin-top: 1rem;
   color: #ccc;
   font-size: 1rem;
-  line-height: 1.5rem;
 }
 
 .confucius {
@@ -33,6 +33,21 @@
 .logo-holder {
   width: 150px;
   margin: 0 auto;
+}
+
+.arrow-holder {
+  width: 50px;
+  margin: 1rem auto;
+}
+
+.arrow-down {
+  color: white;
+  font-size: 2rem;
+  animation: updown 2s ease infinite;
+}
+
+.arrow-down:hover {
+  color: rgb(250, 90, 223);
 }
 
 @media (min-width: 600px) {
@@ -59,12 +74,12 @@
 
   .hero-content h2 {
     font-size: 2rem;
-    color: #ccc;
+    color: white;
   }
 
   .hero-content p {
     margin-top: 1rem;
-    color: #ccc;
+    color: white;
     font-size: 1.5rem;
     line-height: 2.5rem;
   }
@@ -78,5 +93,26 @@
 
   .hero-header {
     text-align: left;
+  }
+
+  .arrow-holder {
+    width: 50px;
+    margin: 5rem auto;
+  }
+}
+
+/* animation  */
+
+@keyframes updown {
+  0% {
+    transform: translateY(-50%);
+  }
+
+  50% {
+    transform: translateY(50%);
+  }
+
+  100% {
+    transform: translateY(-50%);
   }
 }

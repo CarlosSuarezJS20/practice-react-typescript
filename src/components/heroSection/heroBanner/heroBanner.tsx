@@ -4,6 +4,9 @@ import "./heroBanner.css";
 import Logo from "../../logo/logo";
 import SurveyBox from "../../surveybox/surveybox";
 
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
+
 const HeroBanner: React.FC = () => {
   return (
     <header className="hero-section">
@@ -22,6 +25,9 @@ const HeroBanner: React.FC = () => {
           </div>
         </div>
         <SurveyBox />
+      </div>
+      <div className={"arrow-holder"}>
+        <FontAwesomeIcon icon={faChevronDown} className={"arrow-down"} />
       </div>
     </header>
   );
