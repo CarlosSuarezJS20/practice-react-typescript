@@ -3,7 +3,7 @@
     url("../../../assets/images/pexels-junior-teixeira-2047905.jpg")
       center/cover no-repeat;
   height: 100vh;
-  padding: 30vh 0.5rem 0;
+  padding: 31vh 0.5rem 0;
 }
 
 .hero-header {
@@ -105,14 +105,14 @@
 
 @keyframes updown {
   0% {
-    transform: translateY(-50%);
+    transform: translateY(-20%);
   }
 
   50% {
-    transform: translateY(50%);
+    transform: translateY(20%);
   }
 
   100% {
-    transform: translateY(-50%);
+    transform: translateY(-20%);
   }
 }

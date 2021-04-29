@@ -1,6 +1,6 @@
 .about-section {
-  padding: 5rem 2rem;
-  max-width: 1170px;
+  padding: 2rem;
+  max-width: 1180px;
   margin: 0 auto;
   text-align: center;
 }
@@ -61,4 +61,40 @@
 .faSitemaps-about {
   font-size: 1.6rem;
   color: black;
+}
+
+.learn-more-btn-holder {
+  padding: 2rem 0;
+}
+
+.learn-more-btn {
+  color: rgb(250, 90, 223);
+}
+
+.learn-more-btn:hover {
+  color: rgb(250, 90, 223);
+  text-decoration: underline;
+}
+
+@media (min-width: 890px) {
+  .about-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .about-content-holder {
+    padding: 2rem;
+  }
+
+  .skills-holder {
+    margin-top: 5rem;
+    padding: 2rem 2rem;
+    width: 600px;
+  }
+
+  .skills-icons-holder {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3rem;
+  }
 }

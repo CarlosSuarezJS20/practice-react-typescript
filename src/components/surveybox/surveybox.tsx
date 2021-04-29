@@ -27,14 +27,7 @@ const SurveyBox: React.FC = () => {
     axios
       .get(`${DB_URL}/users-answers.json`)
       .then((res) => {
-        const fetchedAnswers = [];
-        for (let item in res.data) {
-          fetchedAnswers.push({
-            ...res.data[item],
-            id: item,
-          });
-        }
-        setNumberOfAnswers(fetchedAnswers.length);
+        setNumberOfAnswers(Object.keys(res.data).length);
       })
       .catch((err) => {});
   }, []);
@@ -44,14 +37,7 @@ const SurveyBox: React.FC = () => {
     axios
       .get(`${DB_URL}/users-answers.json`)
       .then((res) => {
-        const fetchedAnswers = [];
-        for (let item in res.data) {
-          fetchedAnswers.push({
-            ...res.data[item],
-            id: item,
-          });
-        }
-        setNumberOfAnswers(fetchedAnswers.length);
+        setNumberOfAnswers(Object.keys(res.data).length);
       })
       .catch((err) => {});
   };
