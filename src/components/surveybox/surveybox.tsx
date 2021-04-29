@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React, { useRef, useState, useEffect } from "react";
 
 import Loader from "../UI/loader/loader";
 
@@ -6,7 +6,7 @@ import axios from "axios";
 import "./surveybox.css";
 
 const DB_URL: string =
-  "https://typescript-react-portfolio-default-rtdb.firebaseio.com/";
+  "https://typescript-react-portfolio-default-rtdb.firebaseio.com";
 
 interface surveryAnswer {
   id: number;
@@ -16,15 +16,35 @@ interface surveryAnswer {
 const SurveyBox: React.FC = () => {
   const [surveyUserAnswers, setSurveyUserAnswers] = useState<surveryAnswer>();
   const [loading, setLoading] = useState(false);
+  const [fetchedAnswers, setFetchedAnswers] = useState<
+    { id: string; answers: string[] }[] | []
+  >([]);
+
   const programmingQRef = useRef<HTMLSelectElement>(null);
   const skillsQRef = useRef<HTMLSelectElement>(null);
   const stateManagementQRef = useRef<HTMLSelectElement>(null);
   const programmerTypeQRef = useRef<HTMLSelectElement>(null);
 
+  useEffect(() => {
+    axios
+      .get(`${DB_URL}/users-answers.json`)
+      .then((res) => {
+        const fetchedAnswers = [];
+        for (let item in res.data) {
+          fetchedAnswers.push({
+            ...res.data[item],
+            id: item,
+          });
+        }
+        setFetchedAnswers(fetchedAnswers);
+      })
+      .catch((err) => {});
+  }, []);
+
   const onSubmitSurvey = (e: React.FormEvent): void => {
     e.preventDefault();
     setLoading((prevLoading) => !prevLoading);
-    setSurveyUserAnswers({
+    const newAnswer = {
       id: Math.random(),
       answers: [
         programmerTypeQRef.current!.value,
@@ -32,10 +52,12 @@ const SurveyBox: React.FC = () => {
         stateManagementQRef.current!.value,
         programmerTypeQRef.current!.value,
       ],
-    });
+    };
+
+    setSurveyUserAnswers(newAnswer);
 
     axios
-      .post(`${DB_URL}/users-answers.json`, surveyUserAnswers)
+      .post(`${DB_URL}/users-answers.json`, newAnswer)
       .then((res) => {
         setLoading((prevLoading) => !prevLoading);
       })
@@ -54,7 +76,7 @@ const SurveyBox: React.FC = () => {
       ) : (
         <React.Fragment>
           <h2>Quick survey!</h2>
-          <form action="submit">
+          <form action="submit" onSubmit={onSubmitSurvey}>
             <label>favorite programming framework?</label>
             <select ref={programmingQRef} name="programming">
               <option value="React">React</option>
@@ -86,7 +108,7 @@ const SurveyBox: React.FC = () => {
               <option value="mobile">mobile</option>
             </select>
             <br></br>
-            <button onClick={onSubmitSurvey}>submit</button>
+            <button type="submit">submit</button>
           </form>
         </React.Fragment>
       )}
