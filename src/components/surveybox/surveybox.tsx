@@ -16,9 +16,7 @@ interface surveryAnswer {
 const SurveyBox: React.FC = () => {
   const [surveyUserAnswers, setSurveyUserAnswers] = useState<surveryAnswer>();
   const [loading, setLoading] = useState(false);
-  const [fetchedAnswers, setFetchedAnswers] = useState<
-    { id: string; answers: string[] }[] | []
-  >([]);
+  const [numberOfAnswers, setNumberOfAnswers] = useState<number>(0);
 
   const programmingQRef = useRef<HTMLSelectElement>(null);
   const skillsQRef = useRef<HTMLSelectElement>(null);
@@ -36,10 +34,27 @@ const SurveyBox: React.FC = () => {
             id: item,
           });
         }
-        setFetchedAnswers(fetchedAnswers);
+        setNumberOfAnswers(fetchedAnswers.length);
       })
       .catch((err) => {});
   }, []);
+
+  // To update the number in the form
+  const fetchAnswersFromServer = () => {
+    axios
+      .get(`${DB_URL}/users-answers.json`)
+      .then((res) => {
+        const fetchedAnswers = [];
+        for (let item in res.data) {
+          fetchedAnswers.push({
+            ...res.data[item],
+            id: item,
+          });
+        }
+        setNumberOfAnswers(fetchedAnswers.length);
+      })
+      .catch((err) => {});
+  };
 
   const onSubmitSurvey = (e: React.FormEvent): void => {
     e.preventDefault();
@@ -59,6 +74,7 @@ const SurveyBox: React.FC = () => {
     axios
       .post(`${DB_URL}/users-answers.json`, newAnswer)
       .then((res) => {
+        fetchAnswersFromServer();
         setLoading((prevLoading) => !prevLoading);
       })
       .catch((error) => {
@@ -110,6 +126,9 @@ const SurveyBox: React.FC = () => {
             <br></br>
             <button type="submit">submit</button>
           </form>
+          <p className="total-visitors-answers">
+            answered by {numberOfAnswers} visitors
+          </p>
         </React.Fragment>
       )}
     </div>

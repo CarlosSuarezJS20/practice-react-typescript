@@ -46,10 +46,10 @@ button:hover {
   margin: 4rem auto;
 }
 
-.total-participants {
+.total-visitors-answers {
   text-align: right;
+  font-size: 0.7rem;
   color: #ccc;
-  font-size: 0.6rem;
 }
 
 @media (min-width: 890px) {
