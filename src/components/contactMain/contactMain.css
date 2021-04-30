@@ -1,0 +1,55 @@
+.contact-me {
+  text-align: center;
+  min-width: 400px;
+  padding: 4rem 5rem;
+  background: rgb(250, 243, 230);
+}
+
+.header-holder h2 {
+  margin: 0.5rem;
+  font-weight: 300;
+  text-transform: capitalize;
+}
+
+.contact-icons-holder {
+  margin: 1.5rem auto;
+  width: 300px;
+  display: flex;
+}
+
+.contact-icons-holder a {
+  margin: 1rem;
+  padding: 1rem;
+  border: 2px solid rgb(0, 122, 221);
+  border-radius: 10px;
+  transition: background-color 0.5s, color 0.5s ease-in-out;
+}
+
+.contact-icons-holder a:hover {
+  background: rgb(0, 122, 221);
+}
+
+.social-icon {
+  color: rgb(0, 122, 221);
+  font-size: 1.6rem;
+  transition: background-color 0.5s, color 0.5s ease-in-out;
+}
+
+.contact-icons-holder a:hover > #social {
+  color: #ccc;
+}
+
+.contact-icons-holder a:hover > #social .social-icon:hover {
+  color: white;
+}
+
+p {
+  text-transform: capitalize;
+}
+
+@media (min-width: 890px) {
+  .contact-me {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}

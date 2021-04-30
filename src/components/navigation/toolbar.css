@@ -3,7 +3,7 @@
   position: fixed;
   width: 100%;
   justify-content: space-between;
-  background: rgba(119, 119, 119, 0.164);
+  background: rgba(0, 0, 0, 0.61);
   padding: 1rem 1.5rem;
   border-bottom: 2px solid rgb(250, 90, 223);
   min-width: 400px;
@@ -22,7 +22,7 @@
 
 @media (min-width: 600px) {
   .toolbar {
-    background: rgba(0, 0, 0, 0.164);
+    background: rgba(0, 0, 0, 0.61);
   }
 
   .menu-icon {

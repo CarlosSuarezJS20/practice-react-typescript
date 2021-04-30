@@ -20,9 +20,6 @@ const Toolbar: React.FC<ToolbarProps> = (props) => {
         <a>projects</a>
       </li>
       <li>
-        <a>Why me?</a>
-      </li>
-      <li>
         <a>contact</a>
       </li>
       <li>

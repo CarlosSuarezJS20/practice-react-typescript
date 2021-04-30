@@ -1,7 +1,4 @@
 .about-section {
-  padding: 2rem;
-  max-width: 1180px;
-  margin: 0 auto;
   text-align: center;
 }
 
@@ -84,6 +81,7 @@
 
   .about-content-holder {
     padding: 2rem;
+    min-width: 400px;
   }
 
   .skills-holder {

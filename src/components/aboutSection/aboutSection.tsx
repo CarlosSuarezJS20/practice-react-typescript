@@ -13,10 +13,10 @@ import { faSitemap } from "@fortawesome/free-solid-svg-icons";
 
 const AboutSection: React.FC = () => {
   return (
-    <section className="about-section">
+    <section className="about-section section-center">
       <div className="about-content-holder">
         <h2>who i am...? </h2>
-        <div className="underline"></div>
+        <hr />
         <p>
           Hi, my name is Carlos. I’m a front-end developer passionate about
           technology and the cool things we can build with it.
@@ -31,12 +31,12 @@ const AboutSection: React.FC = () => {
           power of the different javaScript frameworks.
         </p>
         <div className="learn-more-btn-holder">
-          <a className="learn-more-btn">projects</a>
+          <a className="learn-more-btn">find out more</a>
         </div>
       </div>
       <div className="skills-holder">
         <h2>technologies and Skills</h2>
-        <div className="underline"></div>
+        <hr />
         <div className="skills-icons-holder">
           <FontAwesomeIcon icon={faReact} className="react-about" />
           <span className="language-skill">typeScript</span>
