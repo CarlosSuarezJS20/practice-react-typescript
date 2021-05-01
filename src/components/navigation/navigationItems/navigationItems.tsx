@@ -11,19 +11,19 @@ const Toolbar: React.FC<ToolbarProps> = (props) => {
   return (
     <ul className={props.open ? "main-nav open" : "main-nav"}>
       <li>
-        <a>blog</a>
+        <a className="links">blog</a>
       </li>
       <li>
-        <a>about me</a>
+        <a className="links">about me</a>
       </li>
       <li>
-        <a>projects</a>
+        <a className="links">projects</a>
       </li>
       <li>
-        <a>contact</a>
+        <a className="links">contact</a>
       </li>
       <li>
-        <a>
+        <a className="links">
           <span>my cv</span>
           <FontAwesomeIcon icon={faDownload} />
         </a>

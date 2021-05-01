@@ -16,9 +16,13 @@ a {
 }
 
 h1,
-h2,
-h3 {
+h2 {
   font-size: 2rem;
+}
+
+h3 {
+  font-size: 1rem;
+  font-weight: 500;
 }
 
 p {

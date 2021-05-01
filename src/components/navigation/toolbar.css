@@ -7,6 +7,7 @@
   padding: 1rem 1.5rem;
   border-bottom: 2px solid rgb(250, 90, 223);
   min-width: 400px;
+  z-index: 100;
 }
 
 .menu-icon {

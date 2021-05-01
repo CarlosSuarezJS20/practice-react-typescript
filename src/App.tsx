@@ -3,6 +3,7 @@ import Toolbar from "./components/navigation/toolbar";
 import HeroBanner from "./components/heroSection/heroBanner/heroBanner";
 import AboutSection from "./components/aboutSection/aboutSection";
 import ContactSection from "./components/contactMain/contactMain";
+import ProjectsSection from "./components/projectsSection/projectsSection";
 
 const App: React.FC = () => {
   return (
@@ -10,6 +11,7 @@ const App: React.FC = () => {
       <Toolbar />
       <HeroBanner />
       <AboutSection />
+      <ProjectsSection />
       <ContactSection />
     </div>
   );

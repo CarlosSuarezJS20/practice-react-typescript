@@ -65,6 +65,7 @@
 }
 
 .learn-more-btn {
+  text-transform: uppercase;
   color: rgb(250, 90, 223);
 }
 
