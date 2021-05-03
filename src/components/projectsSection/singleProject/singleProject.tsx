@@ -1,6 +1,7 @@
 import React from "react";
 import "./singleProject.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { NavLink } from "react-router-dom";
 
 import {
   faCss3Alt,
@@ -35,12 +36,13 @@ const classesForIcons = (icon: IconDefinition) => {
 };
 
 interface Project {
+  projectId: number;
   title: string;
   firstDescription: string;
   secondDescription: string;
   technologies: IconDefinition[];
   image: string;
-  linksPages: { linkGitHub?: string; linkPage?: string }[];
+  linksPages: { linkGitHub?: string; linkPage?: string };
 }
 
 const AboutSection: React.FC<Project> = (props) => {
@@ -69,12 +71,35 @@ const AboutSection: React.FC<Project> = (props) => {
             <p>{props.secondDescription}</p>
           </div>
           <div className="learn-more-holder">
-            <a className="learn-more">want learn more?</a>
+            <NavLink
+              to={{
+                pathname: "/project",
+                state: { projectId: props.projectId },
+              }}
+              className="learn-more"
+            >
+              want learn more?
+            </NavLink>
           </div>
         </div>
         <div className="project-links-container">
-          <a>visit page</a>
-          <a>visit github</a>
+          {props.linksPages.linkPage ? (
+            <a
+              href={props.linksPages.linkPage}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              visit page
+            </a>
+          ) : null}
+
+          <a
+            href={props.linksPages.linkGitHub}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            visit github
+          </a>
         </div>
       </div>
     </article>

@@ -6,10 +6,11 @@ import SurveyBox from "../../surveybox/surveybox";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
+import { Link } from "react-scroll";
 
 const HeroBanner: React.FC = () => {
   return (
-    <header className="hero-section">
+    <header className="hero-section" id="hero">
       <div className="hero-content-container">
         <div className="hero-header">
           <div className="logo-holder">
@@ -27,7 +28,9 @@ const HeroBanner: React.FC = () => {
         <SurveyBox />
       </div>
       <div className={"arrow-holder"}>
-        <FontAwesomeIcon icon={faChevronDown} className={"arrow-down"} />
+        <Link to="about" smooth={true} spy={true} duration={0} offset={-130}>
+          <FontAwesomeIcon icon={faChevronDown} className={"arrow-down"} />
+        </Link>
       </div>
     </header>
   );

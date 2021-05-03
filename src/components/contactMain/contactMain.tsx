@@ -14,72 +14,99 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 
 const Toolbar: React.FC = () => (
-  <section className="contact-me">
-    <div className="contact-greet">
-      <header className="header-holder">
-        <h2>connect with me:</h2>
-      </header>
-      <hr className="header-line" />
-      <p className="contact-me-text">
-        want to get in touch? I enjoy sharing knowledge and finding new ideas.
-      </p>
-    </div>
-    <div className="contact-icons-holder">
-      <a>
-        <FontAwesomeIcon className="social-icon" icon={faGithub} id="social" />
-      </a>
-      <a>
-        <FontAwesomeIcon
-          className="social-icon"
-          icon={faLinkedin}
-          id="social"
-        />
-      </a>
-      <a>
-        <FontAwesomeIcon
-          className="social-icon"
-          icon={faInstagram}
-          id="social"
-        />
-      </a>
-    </div>
+  <React.Fragment>
+    <section className="contact-me" id="contact-me">
+      <div className="contact-greet">
+        <header className="header-holder">
+          <h2>connect with me:</h2>
+        </header>
+        <hr className="header-line" />
+        <p className="contact-me-text">
+          want to get in touch? I enjoy sharing knowledge and finding new ideas.
+        </p>
+      </div>
+      <div className="contact-icons-holder">
+        <a
+          href="https://github.com/CarlosSuarezJS20"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <FontAwesomeIcon
+            className="social-icon"
+            icon={faGithub}
+            id="social"
+          />
+        </a>
+        <a
+          href="https://www.linkedin.com/in/carlos-suarez-a3659141/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <FontAwesomeIcon
+            className="social-icon"
+            icon={faLinkedin}
+            id="social"
+          />
+        </a>
+
+        <a
+          href="https://www.instagram.com/carlos_suarez_photography/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <FontAwesomeIcon
+            className="social-icon"
+            icon={faInstagram}
+            id="social"
+          />
+        </a>
+      </div>
+    </section>
     <div>
-      <div>
+      <div className="reasons-why-additional">
         <div>
           <h2>why work with me?</h2>
+          <hr className="header-line" />
           <p>
             There are many things I could bring to your team, here are a few:
           </p>
         </div>
-        <div>
-          <div>
-            <FontAwesomeIcon icon={faCode} />
+        <div className="why-work-with-me">
+          <div className="reason-container">
+            <div className="why-icon-container">
+              <FontAwesomeIcon icon={faCode} className="why-icons" />
+            </div>
             <h2>technology enthusiast</h2>
             <p>
-              i believe that programmers are at the front row of human
-              technology revolution
+              I’m a strong believer that programmers are at the forefront of our
+              current technology revolution
             </p>
           </div>
-          <div>
-            <FontAwesomeIcon icon={faBookReader} />
-            <h2>technology enthusiast</h2>
+          <div className="reason-container">
+            <div className="why-icon-container">
+              <FontAwesomeIcon icon={faBookReader} className="why-icons" />
+            </div>
+            <h2>can do attitude</h2>
             <p>
-              development is at the front row of the 21s century human
-              revolution
+              Willingness to jump into the unknown, always with a open and
+              positive mind-set to contribute with a ideas and find sustainable
+              solutions
             </p>
           </div>
-          <div>
-            <FontAwesomeIcon icon={faUsers} />
-            <h2>technology enthusiast</h2>
+          <div className="reason-container">
+            <div className="why-icon-container">
+              <FontAwesomeIcon icon={faUsers} className="why-icons" />
+            </div>
+            <h2>team adaptability </h2>
             <p>
-              development is at the front row of the 21s century human
-              revolution
+              Accustomed to working in fast paced environments and across
+              diverse team structures
             </p>
           </div>
         </div>
       </div>
     </div>
-  </section>
+  </React.Fragment>
 );
 
 export default Toolbar;

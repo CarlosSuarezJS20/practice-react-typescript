@@ -6,7 +6,7 @@ import projectsArray from "../projectsSection/projects";
 const ProjectSection: React.FC = () => {
   return (
     <section className="projects-section">
-      <div className="project-intro">
+      <div className="project-intro" id="projects">
         <header>
           <h2>My lastest projects</h2>
           <hr className="highlighter" />
@@ -17,6 +17,7 @@ const ProjectSection: React.FC = () => {
         {projectsArray.map((project) => (
           <Project
             key={project.id}
+            projectId={project.id}
             title={project.projectTitle}
             image={project.image}
             firstDescription={project.description1}

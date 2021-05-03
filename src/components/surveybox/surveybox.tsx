@@ -44,6 +44,18 @@ const SurveyBox: React.FC = () => {
 
   const onSubmitSurvey = (e: React.FormEvent): void => {
     e.preventDefault();
+
+    // validation
+    if (
+      programmerTypeQRef.current!.value.trim() === "" &&
+      skillsQRef.current!.value.trim() === "" &&
+      stateManagementQRef.current!.value.trim() === "" &&
+      programmerTypeQRef.current!.value.trim() === ""
+    ) {
+      alert("You must answer all questions!");
+      return;
+    }
+
     setLoading((prevLoading) => !prevLoading);
     const newAnswer = {
       id: Math.random(),
@@ -81,6 +93,7 @@ const SurveyBox: React.FC = () => {
           <form action="submit" onSubmit={onSubmitSurvey}>
             <label>favorite programming framework?</label>
             <select ref={programmingQRef} name="programming">
+              <option value="">-select one-</option>
               <option value="React">React</option>
               <option value="Vue">Vue</option>
               <option value="Angular">Angular</option>
@@ -89,6 +102,7 @@ const SurveyBox: React.FC = () => {
             <br></br>
             <label>what a junior developer should have?</label>
             <select ref={skillsQRef} name="skills">
+              <option value="">-select one-</option>
               <option value="Eagerness to lear">Eagerness to learn</option>
               <option value="CS Degree">CS Degree</option>
               <option value="Commercial experience">
@@ -99,12 +113,14 @@ const SurveyBox: React.FC = () => {
             <br></br>
             <label>Redux or Context Api?</label>
             <select ref={stateManagementQRef} name="state-management">
+              <option value="">-select one-</option>
               <option value="Redux">Redux</option>
               <option value="Context Api">Context Api</option>
             </select>
             <br></br>
             <label>Backend, Frontend, Mobile?</label>
             <select ref={programmerTypeQRef} name="profession">
+              <option value="">-select one-</option>
               <option value="Back-end">back-end</option>
               <option value="Front-end">front-end</option>
               <option value="mobile">mobile</option>

@@ -2,7 +2,6 @@
   text-align: center;
   min-width: 400px;
   padding: 4rem 5rem;
-  background: rgb(250, 243, 230);
 }
 
 .header-holder h2 {
@@ -12,14 +11,20 @@
 }
 
 .contact-icons-holder {
-  margin: 1.5rem auto;
-
   display: flex;
+  align-content: center;
+  width: 300px;
+  margin: 1.5rem auto;
 }
 
 .contact-icons-holder a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 70px;
+  width: 70px;
   margin: 0.7rem;
-  padding: 1rem;
+  padding: 0.5rem;
   border: 2px solid rgb(0, 122, 221);
   border-radius: 10px;
   transition: background-color 0.5s, color 0.5s ease-in-out;
@@ -31,7 +36,7 @@
 
 .social-icon {
   color: rgb(0, 122, 221);
-  font-size: 1.6rem;
+  font-size: 2rem;
   transition: background-color 0.5s, color 0.5s ease-in-out;
 }
 
@@ -47,9 +52,50 @@
   text-transform: capitalize;
 }
 
+.reason-container {
+  margin: 1rem 0.6rem;
+}
+
+.reasons-why-additional {
+  padding: 2rem 3rem;
+  margin: 0 auto;
+  max-width: 1170px;
+  text-align: center;
+}
+
+.reasons-why-additional h2 {
+  font-size: 2rem;
+  font-weight: 400;
+  text-transform: capitalize;
+}
+
+.why-icon-container {
+  width: 30px;
+  margin: 0.5rem auto;
+}
+
+.why-icons {
+  color: rgb(155, 50, 137);
+  font-size: 2.5rem;
+}
+
+.why-work-with-me {
+  padding: 3rem 1rem;
+  text-align: center;
+}
+
+.why-work-with-me p {
+  margin-top: 1rem;
+}
+
 @media (min-width: 890px) {
   .contact-me {
     display: grid;
     grid-template-columns: 1fr 1fr;
+  }
+
+  .why-work-with-me {
+    display: flex;
+    justify-content: space-between;
   }
 }

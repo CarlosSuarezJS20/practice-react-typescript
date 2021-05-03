@@ -1,6 +1,6 @@
 import React from "react";
 import "./aboutSection.css";
-
+import { Link } from "react-scroll";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faReact,
@@ -14,7 +14,7 @@ import { faSitemap } from "@fortawesome/free-solid-svg-icons";
 const AboutSection: React.FC = () => {
   return (
     <section className="about-section section-center">
-      <div className="about-content-holder">
+      <div className="about-content-holder" id="about">
         <h2>who i am...? </h2>
         <hr />
         <p>
@@ -31,7 +31,15 @@ const AboutSection: React.FC = () => {
           power of the different javaScript frameworks.
         </p>
         <div className="learn-more-btn-holder">
-          <a className="learn-more-btn">find out more</a>
+          <Link
+            to="contact-me"
+            smooth={true}
+            spy={true}
+            duration={0}
+            className="learn-more-btn"
+          >
+            find out more
+          </Link>
         </div>
       </div>
       <div className="skills-holder">

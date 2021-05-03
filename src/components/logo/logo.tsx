@@ -1,5 +1,6 @@
 import React from "react";
 import "./logo.css";
+import { NavLink } from "react-router-dom";
 
 interface Section {
   heroBanner: boolean;
@@ -13,14 +14,14 @@ const Logo: React.FC<Section> = (props) => {
   }
 
   return (
-    <a className="logo">
+    <NavLink to="/" className="logo">
       <div className="cs-title">
         <h2>cs</h2>
       </div>
       <div>
         <h2 className="technologies-title">{logoTechnologiesTitle}</h2>
       </div>
-    </a>
+    </NavLink>
   );
 };
 
