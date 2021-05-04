@@ -1,0 +1,175 @@
+.project-main {
+  background: #2c3339;
+  padding: 7rem 1rem;
+  margin: 0 auto;
+}
+
+.overview-decoration {
+  border-bottom: 1px solid #ffff;
+  width: 30%;
+  display: none;
+}
+
+.project-container {
+  margin: 0 auto;
+  max-width: 600px;
+}
+
+.border-decorator {
+  box-sizing: content-box;
+  height: 0;
+  overflow: visible;
+  border: none;
+  border-bottom: 3px solid rgb(250, 90, 223);
+  margin: 1em auto;
+  width: 30%;
+}
+
+.project-intro-title {
+  text-align: center;
+}
+
+.project-intro-title h2 {
+  color: #ffff;
+  font-weight: 500;
+}
+
+.project-description {
+  padding: 0.5rem 1rem;
+  text-align: center;
+  color: rgba(241, 241, 241, 0.877);
+}
+
+.project-summary-image-links {
+  padding: 2rem 1rem;
+}
+
+.project-links-holder {
+  display: grid;
+  gap: 4rem;
+  padding: 1rem 1rem;
+  grid-template-columns: 1fr 1fr;
+}
+
+.project-links-holder a {
+  color: white;
+  font-weight: bold;
+  text-transform: capitalize;
+  text-align: center;
+  background: rgb(141, 46, 141);
+  border-radius: 5px;
+  padding: 0.7rem 1rem;
+  transition: background-color 0.5s, color 0.5s;
+  max-height: 37px;
+}
+
+.project-links-holder a:hover {
+  color: rgb(141, 46, 141);
+  text-transform: capitalize;
+  background: #ffff;
+}
+
+/* section Technologies */
+
+.technologies-main-technologies {
+  background: rgb(243, 243, 243);
+  padding: 3rem 1rem;
+  margin: auto;
+}
+
+.technologies-image-container {
+  margin-top: 2rem;
+}
+
+.technologies-intro-title {
+  text-align: center;
+}
+
+.technologies-intro-title h2 {
+  color: #2c3339;
+  font-weight: 500;
+}
+
+.technologies-border-decorator {
+  box-sizing: content-box;
+  height: 0;
+  overflow: visible;
+  border: none;
+  border-bottom: 3px solid rgb(250, 90, 223);
+  margin: 1em auto;
+  width: 30%;
+}
+
+.technologies-overview-decoration {
+  border-bottom: 1px solid #2c3339;
+  width: 30%;
+  display: none;
+}
+
+.technologies-container {
+  margin: 0 auto;
+  max-width: 600px;
+}
+
+.technologies-content {
+  margin: 0.5rem;
+}
+
+.technologies-content ul {
+  width: 200px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.technologies-content p {
+  text-align: center;
+}
+
+.go-back-btn-container {
+  width: 100%;
+}
+
+.go-back-to-projects-btn {
+  border: none;
+  color: rgb(141, 46, 141);
+}
+
+.go-back-to-projects-btn:hover {
+  color: rgb(141, 46, 141);
+  text-decoration: underline;
+  background: none;
+}
+
+.technologies-content li {
+  line-height: 1.5rem;
+}
+
+@media (min-width: 600px) {
+  .overview-decoration {
+    display: block;
+    width: 20%;
+  }
+
+  .border-decorator {
+    display: none;
+  }
+
+  .project-description {
+    flex: 1 50%;
+    padding: 2.5rem 1rem;
+    border-left: 3px solid rgb(250, 90, 223);
+    text-align: left;
+  }
+
+  .project-container {
+    display: flex;
+    margin-top: 3rem;
+    justify-content: space-between;
+    max-width: 1000px;
+  }
+
+  .project-summary-image-links {
+    flex: 1 50%;
+    padding: 1rem 0;
+  }
+}

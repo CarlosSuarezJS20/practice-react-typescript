@@ -23,6 +23,7 @@ const ProjectSection: React.FC = () => {
             firstDescription={project.description1}
             secondDescription={project.description2}
             technologies={project.languages}
+            technologiesList={project.technologies}
             linksPages={project.links}
           />
         ))}

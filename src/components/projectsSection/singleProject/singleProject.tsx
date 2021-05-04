@@ -43,6 +43,7 @@ interface Project {
   technologies: IconDefinition[];
   image: string;
   linksPages: { linkGitHub?: string; linkPage?: string };
+  technologiesList: string[];
 }
 
 const AboutSection: React.FC<Project> = (props) => {
@@ -73,7 +74,7 @@ const AboutSection: React.FC<Project> = (props) => {
           <div className="learn-more-holder">
             <NavLink
               to={{
-                pathname: "/project",
+                pathname: `/project/${props.title}`,
                 state: { projectId: props.projectId },
               }}
               className="learn-more"
