@@ -51,7 +51,7 @@ const AboutSection: React.FC<Project> = (props) => {
     <article className="card">
       <div className="project-content">
         <div className="image-container">
-          <img src={props.image} alt="project-image" />
+          <img src={props.image} alt="project" />
           <div className="tech-stack">
             <h3>Tech stack</h3>
             {props.technologies.map((tech) => (

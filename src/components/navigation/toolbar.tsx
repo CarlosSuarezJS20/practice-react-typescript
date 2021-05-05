@@ -22,7 +22,7 @@ const Toolbar: React.FC = () => {
         onClick={onHandlingDropMenu}
       />
       <Logo heroBanner={false} />
-      <NavigationItems open={openMenu} />
+      <NavigationItems onMenuHandler={onHandlingDropMenu} open={openMenu} />
     </nav>
   );
 };

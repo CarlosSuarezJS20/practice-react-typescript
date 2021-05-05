@@ -5,8 +5,11 @@ import { faDownload } from "@fortawesome/free-solid-svg-icons";
 import { NavLink, useHistory } from "react-router-dom";
 import { Link } from "react-scroll";
 
+const pdfCv = "../../../assets/images/developer-cv.docx.pdf";
+
 interface ToolbarProps {
   open: boolean;
+  onMenuHandler: () => void;
 }
 
 const Toolbar: React.FC<ToolbarProps> = (props) => {
@@ -32,6 +35,7 @@ const Toolbar: React.FC<ToolbarProps> = (props) => {
           duration={0}
           offset={-130}
           className="links"
+          onClick={props.onMenuHandler}
         >
           about me
         </Link>
@@ -44,6 +48,7 @@ const Toolbar: React.FC<ToolbarProps> = (props) => {
           duration={0}
           offset={-100}
           className="links"
+          onClick={props.onMenuHandler}
         >
           projects
         </Link>
@@ -54,7 +59,7 @@ const Toolbar: React.FC<ToolbarProps> = (props) => {
         </NavLink>
       </li>
       <li>
-        <a className="links">
+        <a href={pdfCv} className="links" download>
           <span>my cv</span>
           <FontAwesomeIcon icon={faDownload} />
         </a>
@@ -82,7 +87,7 @@ const Toolbar: React.FC<ToolbarProps> = (props) => {
           </NavLink>
         </li>
         <li>
-          <a className="links">
+          <a href={pdfCv} className="links" download>
             <span>my cv</span>
             <FontAwesomeIcon icon={faDownload} />
           </a>

@@ -31,6 +31,8 @@ const projects = [
       "Axios",
       "Class components",
       "Firebase",
+      "Authentication",
+      "Profile page, Rating features",
     ],
     links: {
       linkGitHub:

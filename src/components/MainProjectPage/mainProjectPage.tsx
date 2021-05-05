@@ -11,12 +11,12 @@ import { faAngleDoubleLeft } from "@fortawesome/free-solid-svg-icons";
 
 import { useHistory } from "react-router-dom";
 
-interface Project {
+interface ProjectId {
   projectId: number;
 }
 
 const Project: React.FC = () => {
-  const { state } = useLocation<Project>();
+  const { state } = useLocation<ProjectId>();
   const history = useHistory();
 
   const project = projects.find((project) => project.id === state.projectId);

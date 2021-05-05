@@ -8,6 +8,7 @@
 html {
   font-family: sans-serif;
   min-width: 410px;
+  min-height: 100%;
 }
 
 a {
