@@ -14,10 +14,36 @@ import sodasProjectReact from "../../assets/images/sodasV2.png";
 import myPortfolio from "../../assets/images/myPortfolio-react.png";
 import codeWarsImg from "../../assets/images/kata.png";
 import dogImg from "../../assets/images/dogs.png";
+import filmBox from "../../assets/images/Screenshot 2021-05-16 at 18.11.15.png";
 
 const projects = [
   {
     id: 1,
+    projectTitle: "Film box",
+    image: filmBox,
+    description1: `Budget World 2.0 is a fully functional application built using React.js class components. To have more flexibility when manipulating data, I have included REDUX for state management. Furthermore, I’m using FIREBASE to store data and manage the API operations. I'm using AXIOS library throughout the project.`,
+    description2: `Authentication is fully functional and routing helps for limiting page accessibility. Fully RESPONSIVE`,
+    languages: [faReact],
+    technologies: [
+      "React",
+      "SASS",
+      "Redux",
+      "Hooks",
+      "Axios",
+      "TMDB Api",
+      "Firebase",
+      "Authentication",
+      "Profile page, Rating features",
+    ],
+    links: {
+      linkGitHub:
+        "https://github.com/CarlosSuarezJS20/Budget-World-react.js-v2.0",
+
+      linkPage: "https://budget-world-reactjs.web.app/",
+    },
+  },
+  {
+    id: 2,
     projectTitle: "World Budget App v2.0",
     image: imageBwV2,
     description1: `Budget World 2.0 is a fully functional application built using React.js class components. To have more flexibility when manipulating data, I have included REDUX for state management. Furthermore, I’m using FIREBASE to store data and manage the API operations. I'm using AXIOS library throughout the project.`,
@@ -38,11 +64,11 @@ const projects = [
       linkGitHub:
         "https://github.com/CarlosSuarezJS20/Budget-World-react.js-v2.0",
 
-      linkPage: "https://budget-world-reactjs.web.app/budget-world/login",
+      linkPage: "https://budget-world-reactjs.web.app/",
     },
   },
   {
-    id: 2,
+    id: 3,
     projectTitle: "Puppy Finder",
     image: dogImg,
     description1: `This web-app helps users find their ideal puppy dog. they can find dogs depending on breed, temperaments and sizes. Try it out!`,
@@ -57,7 +83,7 @@ const projects = [
     },
   },
   {
-    id: 3,
+    id: 4,
     projectTitle: "Rainbow Soda UK",
     image: sodasProjectReact,
     description1: `This project is built on React.js using REACT HOOKS. Context, useState() and useEffect() to manage the state elements and facilitate the flow of data through different components.`,
@@ -80,7 +106,7 @@ const projects = [
     },
   },
   {
-    id: 4,
+    id: 5,
     projectTitle: "World Budget App v1.0",
     image: imageBwV1,
     description1: `The idea behind this project was to create a very fast way for travellers to find how much things cost in their holidays destination. Users can add, delete, edit existing items and filter as they wish.`,
@@ -100,7 +126,7 @@ const projects = [
     },
   },
   {
-    id: 5,
+    id: 6,
     projectTitle: "Drag and Drop To Do List",
     image: toDoList,
     description1: `Simple but powerful. This app allows users to add their daily tasks, but also segment them into different priorities. They can DRAG and DROP between the different buckets and reactivate done tasks if required.`,
@@ -119,7 +145,7 @@ const projects = [
     },
   },
   {
-    id: 6,
+    id: 7,
     projectTitle: "Rainbow Sodas UK Ecommerce",
     image: sodasProject,
     description1: `This project allows me to see how different parts of an ecommerce work together and share information to render information and the appropriate elements. Features include: filtering, quantity adjustments, cart display.  `,
@@ -139,7 +165,7 @@ const projects = [
   },
 
   {
-    id: 7,
+    id: 8,
     projectTitle: "First Portfolio Page",
     image: myPortfolio,
     description1: `The idea behind this project was to create a showcase of all my coding projects for the past year. I tried to keep the UI as simple as possible without any fluff. `,
@@ -152,7 +178,7 @@ const projects = [
     },
   },
   {
-    id: 8,
+    id: 9,
     projectTitle: "Code Wars - Ongoing",
     image: codeWarsImg,
     description1: `Helps me build my problem solving skills and allow me to practice different concepts learned in JavaScript`,

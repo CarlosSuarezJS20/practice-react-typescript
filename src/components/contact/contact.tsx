@@ -105,7 +105,7 @@ const ContactPage = () => {
             </div>
             <button
               disabled={
-                nameValue === "" || emailValue === "" || messageValue === ""
+                nameValue === "" && emailValue === "" && messageValue === ""
               }
               type="submit"
               className="submit-btn"

@@ -22,11 +22,11 @@ const Toolbar: React.FC<ToolbarProps> = (props) => {
           home
         </NavLink>
       </li>
-      <li>
+      {/* <li>
         <NavLink activeClassName="active" to="/blog" className="links">
           blog
         </NavLink>
-      </li>
+      </li> */}
       <li>
         <Link
           to="about"
@@ -58,12 +58,12 @@ const Toolbar: React.FC<ToolbarProps> = (props) => {
           contact
         </NavLink>
       </li>
-      <li>
+      {/* <li>
         <a href={pdfCv} className="links" download>
           <span>my cv</span>
           <FontAwesomeIcon icon={faDownload} />
         </a>
-      </li>
+      </li> */}
     </ul>
   );
 
@@ -86,12 +86,12 @@ const Toolbar: React.FC<ToolbarProps> = (props) => {
             contact
           </NavLink>
         </li>
-        <li>
+        {/* <li>
           <a href={pdfCv} className="links" download>
             <span>my cv</span>
             <FontAwesomeIcon icon={faDownload} />
           </a>
-        </li>
+        </li> */}
       </ul>
     );
   }
