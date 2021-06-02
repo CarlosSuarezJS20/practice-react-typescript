@@ -1,6 +1,5 @@
 import React from "react";
 import Home from "./components/home/home";
-import Blog from "./components/blog/blog";
 import Contact from "./components/contact/contact";
 import Project from "./components/MainProjectPage/mainProjectPage";
 
@@ -10,7 +9,6 @@ const App: React.FC = () => {
   return (
     <React.Fragment>
       <Route path="/" exact component={Home} />
-      <Route path="/blog" component={Blog} />
       <Route path="/project/:name" component={Project} />
       <Route path="/contact-me" component={Contact} />
     </React.Fragment>

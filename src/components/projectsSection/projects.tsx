@@ -14,32 +14,32 @@ import sodasProjectReact from "../../assets/images/sodasV2.png";
 import myPortfolio from "../../assets/images/myPortfolio-react.png";
 import codeWarsImg from "../../assets/images/kata.png";
 import dogImg from "../../assets/images/dogs.png";
-import filmBox from "../../assets/images/Screenshot 2021-05-16 at 18.11.15.png";
+import livingRoom from "../../assets/images/livingRoom.png";
 
 const projects = [
   {
     id: 1,
     projectTitle: "Film box",
-    image: filmBox,
-    description1: `Budget World 2.0 is a fully functional application built using React.js class components. To have more flexibility when manipulating data, I have included REDUX for state management. Furthermore, I’m using FIREBASE to store data and manage the API operations. I'm using AXIOS library throughout the project.`,
-    description2: `Authentication is fully functional and routing helps for limiting page accessibility. Fully RESPONSIVE`,
+    image: livingRoom,
+    description1: `Status: DEVELOPMENT - Browse and find your favorite movies, tv shows and actors. Search across the MDB API and find all you need to find your next watch.`,
+    description2: `Login is fully functional and routing helps for limiting page accessibility. Fully RESPONSIVE`,
     languages: [faReact],
     technologies: [
       "React",
-      "SASS",
+      "TypeScript",
       "Redux",
       "Hooks",
       "Axios",
       "TMDB Api",
       "Firebase",
       "Authentication",
-      "Profile page, Rating features",
+      "Filters, Log in",
     ],
     links: {
       linkGitHub:
-        "https://github.com/CarlosSuarezJS20/Budget-World-react.js-v2.0",
+        "https://github.com/CarlosSuarezJS20/film-typescript-hooks-project",
 
-      linkPage: "https://budget-world-reactjs.web.app/",
+      linkPage: "https://living-room-3a1ec.web.app/",
     },
   },
   {

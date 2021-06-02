@@ -59,7 +59,7 @@ const MainFooter = () => {
             <br /> Code and design by
             <a
               className="name-a"
-              href="https://my-portfoliowb.web.app/"
+              href="https://typescript-react-portfolio.web.app/"
               target="_blank"
               rel="noopener noreferrer"
             >

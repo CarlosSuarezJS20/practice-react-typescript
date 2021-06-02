@@ -1,7 +1,5 @@
 import React from "react";
 import "./navigationItems.css";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faDownload } from "@fortawesome/free-solid-svg-icons";
 import { NavLink, useHistory } from "react-router-dom";
 import { Link } from "react-scroll";
 
@@ -22,11 +20,6 @@ const Toolbar: React.FC<ToolbarProps> = (props) => {
           home
         </NavLink>
       </li>
-      {/* <li>
-        <NavLink activeClassName="active" to="/blog" className="links">
-          blog
-        </NavLink>
-      </li> */}
       <li>
         <Link
           to="about"
@@ -58,12 +51,6 @@ const Toolbar: React.FC<ToolbarProps> = (props) => {
           contact
         </NavLink>
       </li>
-      {/* <li>
-        <a href={pdfCv} className="links" download>
-          <span>my cv</span>
-          <FontAwesomeIcon icon={faDownload} />
-        </a>
-      </li> */}
     </ul>
   );
 
@@ -77,21 +64,10 @@ const Toolbar: React.FC<ToolbarProps> = (props) => {
           </NavLink>
         </li>
         <li>
-          <NavLink activeClassName="active" to="/blog" className="links">
-            blog
-          </NavLink>
-        </li>
-        <li>
           <NavLink activeClassName="active" to="/contact-me" className="links">
             contact
           </NavLink>
         </li>
-        {/* <li>
-          <a href={pdfCv} className="links" download>
-            <span>my cv</span>
-            <FontAwesomeIcon icon={faDownload} />
-          </a>
-        </li> */}
       </ul>
     );
   }
