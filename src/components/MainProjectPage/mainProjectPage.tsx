@@ -4,12 +4,10 @@ import Toolbar from "../navigation/toolbar";
 import Footer from "../footer/footer";
 import projects from "../projectsSection/projects";
 import desktopImg from "../../assets/images/pexels-designecologist-1779487.jpg";
-import { useLocation } from "react-router-dom";
+import { useLocation, useHistory } from "react-router-dom";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAngleDoubleLeft } from "@fortawesome/free-solid-svg-icons";
-
-import { useHistory } from "react-router-dom";
 
 interface ProjectId {
   projectId: number;

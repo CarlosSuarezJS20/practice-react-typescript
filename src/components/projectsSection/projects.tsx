@@ -19,9 +19,9 @@ import livingRoom from "../../assets/images/livingRoom.png";
 const projects = [
   {
     id: 1,
-    projectTitle: "Film box",
+    projectTitle: "Living Room",
     image: livingRoom,
-    description1: `Status: DEVELOPMENT - Browse and find your favorite movies, tv shows and actors. Search across the MDB API and find all you need to find your next watch.`,
+    description1: `tatus: DEVELOPMENT - Browse and find your favorite movies, tv shows and actors. Search across the MDB API and find all you need to find your next watch.`,
     description2: `Login is fully functional and routing helps for limiting page accessibility. Fully RESPONSIVE`,
     languages: [faReact],
     technologies: [
