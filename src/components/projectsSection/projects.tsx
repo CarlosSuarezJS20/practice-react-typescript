@@ -21,7 +21,7 @@ const projects = [
     id: 1,
     projectTitle: "Living Room",
     image: livingRoom,
-    description1: `tatus: DEVELOPMENT - Browse and find your favorite movies, tv shows and actors. Search across the MDB API and find all you need to find your next watch.`,
+    description1: `Browse and find your favorite movies, tv shows and actors. Search across the MDB API and find all you need to find your next watch.`,
     description2: `Login is fully functional and routing helps for limiting page accessibility. Fully RESPONSIVE`,
     languages: [faReact],
     technologies: [
@@ -127,7 +127,7 @@ const projects = [
   },
   {
     id: 6,
-    projectTitle: "Drag and Drop To Do List",
+    projectTitle: "Drag and Drop To Do",
     image: toDoList,
     description1: `Simple but powerful. This app allows users to add their daily tasks, but also segment them into different priorities. They can DRAG and DROP between the different buckets and reactivate done tasks if required.`,
     description2: `I approached this project using OOB, JavaScript Modules, Webpack for code simplification in production. Local storage. Fully RESPONSIVE`,
@@ -146,7 +146,7 @@ const projects = [
   },
   {
     id: 7,
-    projectTitle: "Rainbow Sodas UK Ecommerce",
+    projectTitle: "Rainbow Ecommerce",
     image: sodasProject,
     description1: `This project allows me to see how different parts of an ecommerce work together and share information to render information and the appropriate elements. Features include: filtering, quantity adjustments, cart display.  `,
     description2: `I approached this project using OOB javaScript architecture. I used this approach to understand the structure and prepare me to emigrate the page to react.js. Fully RESPONSIVE`,
