@@ -1,0 +1,17 @@
+@mixin titles-font-size($size) {
+  font-size: $size;
+}
+
+@mixin btn-basic-style {
+  text-transform: capitalize;
+  padding: 0.3rem 0.5rem;
+  border-radius: 5px;
+  height: 30px;
+  transition: all 0.5s linear;
+}
+
+@mixin small-screen-only {
+  @media (min-width: 600px) {
+    @content;
+  }
+}

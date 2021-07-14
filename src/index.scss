@@ -1,3 +1,5 @@
+@import "./scss/variables", "./scss/mixins";
+
 * {
   margin: 0;
   padding: 0;
@@ -18,16 +20,17 @@ a {
 
 h1,
 h2 {
-  font-size: 2rem;
+  @include titles-font-size(2rem);
 }
 
 h3 {
-  font-size: 1rem;
+  @include titles-font-size(1rem);
   font-weight: 500;
 }
 
 p {
   line-height: 1.5rem;
+  font-weight: map-get($font-weights, "lean");
 }
 
 img {
@@ -39,14 +42,4 @@ img {
   padding: 3rem 2rem;
   max-width: 1180px;
   margin: 0 auto;
-}
-
-hr {
-  box-sizing: content-box;
-  height: 0;
-  overflow: visible;
-  border: none;
-  border-bottom: 1px solid rgb(0, 122, 221);
-  margin: 1em auto;
-  width: 50%;
 }

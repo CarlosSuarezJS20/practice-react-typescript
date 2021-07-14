@@ -1,0 +1,29 @@
+@import "../../scss/variables", "../../scss/mixins";
+
+.toolbar {
+  display: flex;
+  position: fixed;
+  width: 100%;
+  justify-content: space-between;
+  background: rgba($black-color, 0.6);
+  padding: 1rem 1.5rem;
+  border-bottom: 2px solid $primary-brand-color;
+  min-width: 400px;
+  z-index: 100;
+  @include small-screen-only {
+    padding: 0 2rem;
+  }
+
+  &__menu-icon {
+    color: $primary-color;
+    font-size: 2rem;
+    cursor: pointer;
+    transition: all 0.5s linear;
+    @include small-screen-only {
+      display: none;
+    }
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
+}
