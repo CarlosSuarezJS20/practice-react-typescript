@@ -1,3 +1,5 @@
+// Mixins
+
 @mixin titles-font-size($size) {
   font-size: $size;
 }
@@ -10,8 +12,23 @@
   transition: all 0.5s linear;
 }
 
-@mixin small-screen-only {
-  @media (min-width: 600px) {
-    @content;
+@mixin screen-size($screen-type) {
+  @if ($screen-type == "medium-size-screen") {
+    @media (min-width: 600px) {
+      @content;
+    }
+  } @else if($screen-type == "large-screen") {
+    @media (min-width: 890px) {
+      @content;
+    }
   }
 }
+
+@mixin assign-hero-image($file-name) {
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.6)),
+    url("../assets/images/#{$file-name}.jpg") center/cover no-repeat;
+  height: 100vh;
+  padding: 20vh 0.5rem 0;
+}
+
+// functions:

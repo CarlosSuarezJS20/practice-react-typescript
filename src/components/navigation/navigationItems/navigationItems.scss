@@ -1,0 +1,48 @@
+@import "../../../scss/variables", "../../../scss/mixins";
+
+.main-nav {
+  position: absolute;
+  background: rgba($black-color, 0.7);
+  width: 100%;
+  top: 100%;
+  left: 0;
+  padding: 1rem;
+  list-style: none;
+  display: none;
+  @include screen-size("medium-size-screen") {
+    display: flex;
+    background: rgba(0, 0, 0, 0.164);
+    background: none;
+    width: auto;
+    position: static;
+    padding: 0.5rem;
+  }
+
+  .open {
+    display: block;
+  }
+
+  .link-holder {
+    margin: 0.5rem;
+
+    &:active {
+      color: $primary-color;
+    }
+
+    &__link {
+      text-transform: uppercase;
+      font-size: 1.2rem;
+      font-weight: bold;
+      color: $secondary-color;
+
+      &.active {
+        color: $primary-color;
+      }
+
+      &:active,
+      &:hover {
+        color: $primary-color;
+      }
+    }
+  }
+}

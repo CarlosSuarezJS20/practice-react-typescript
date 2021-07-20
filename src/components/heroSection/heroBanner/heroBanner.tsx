@@ -1,5 +1,5 @@
 import React from "react";
-import "./heroBanner.css";
+import "./heroBanner.scss";
 
 import Logo from "../../logo/logo";
 import SurveyBox from "../../surveybox/surveybox";
@@ -11,7 +11,7 @@ import { Link } from "react-scroll";
 const HeroBanner: React.FC = () => {
   return (
     <header className="hero-section" id="hero">
-      <div className="hero-content-container">
+      <div className="hero-section__container">
         <div className="hero-header">
           <div className="logo-holder">
             <Logo heroBanner />
@@ -29,7 +29,10 @@ const HeroBanner: React.FC = () => {
       </div>
       <div className={"arrow-holder"}>
         <Link to="about" smooth={true} spy={true} duration={0} offset={-130}>
-          <FontAwesomeIcon icon={faChevronDown} className={"arrow-down"} />
+          <FontAwesomeIcon
+            icon={faChevronDown}
+            className={"arrow-holder__arrow-down"}
+          />
         </Link>
       </div>
     </header>

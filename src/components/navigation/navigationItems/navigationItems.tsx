@@ -1,9 +1,7 @@
 import React from "react";
-import "./navigationItems.css";
+import "./navigationItems.scss";
 import { NavLink, useHistory } from "react-router-dom";
 import { Link } from "react-scroll";
-
-const pdfCv = "../../../assets/images/developer-cv.docx.pdf";
 
 interface ToolbarProps {
   open: boolean;
@@ -15,39 +13,48 @@ const Toolbar: React.FC<ToolbarProps> = (props) => {
 
   let listOfNaVLinks = (
     <ul className={props.open ? "main-nav open" : "main-nav"}>
-      <li>
-        <NavLink activeClassName="active" exact to="/" className="links">
+      <li className="link-holder">
+        <NavLink
+          activeClassName="active"
+          exact
+          to="/"
+          className="link-holder__link"
+        >
           home
         </NavLink>
       </li>
-      <li>
+      <li className="link-holder">
         <Link
           to="about"
           smooth={true}
           spy={true}
           duration={0}
           offset={-130}
-          className="links"
+          className="link-holder__link"
           onClick={props.onMenuHandler}
         >
           about me
         </Link>
       </li>
-      <li>
+      <li className="link-holder">
         <Link
           to="projects"
           smooth={true}
           spy={true}
           duration={0}
           offset={-100}
-          className="links"
+          className="link-holder__link"
           onClick={props.onMenuHandler}
         >
           projects
         </Link>
       </li>
-      <li>
-        <NavLink activeClassName="active" to="/contact-me" className="links">
+      <li className="link-holder">
+        <NavLink
+          activeClassName="active"
+          to="/contact-me"
+          className="link-holder__link"
+        >
           contact
         </NavLink>
       </li>
@@ -58,13 +65,22 @@ const Toolbar: React.FC<ToolbarProps> = (props) => {
   if (history.location.pathname !== "/") {
     listOfNaVLinks = (
       <ul className={props.open ? "main-nav open" : "main-nav"}>
-        <li>
-          <NavLink activeClassName="active" exact to="/" className="links">
+        <li className="link-holder">
+          <NavLink
+            activeClassName="active"
+            exact
+            to="/"
+            className="link-holder__link"
+          >
             home
           </NavLink>
         </li>
-        <li>
-          <NavLink activeClassName="active" to="/contact-me" className="links">
+        <li className="link-holder">
+          <NavLink
+            activeClassName="active"
+            to="/contact-me"
+            className="link-holder__link"
+          >
             contact
           </NavLink>
         </li>

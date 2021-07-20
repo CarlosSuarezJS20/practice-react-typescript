@@ -1,7 +1,5 @@
 import React, { useState } from "react";
 import "./toolbar.scss";
-
-import Logo from "../logo/logo";
 import NavigationItems from "../navigation/navigationItems/navigationItems";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -21,7 +19,6 @@ const Toolbar: React.FC = () => {
         className="toolbar__menu-icon"
         onClick={onHandlingDropMenu}
       />
-      <Logo heroBanner={false} />
       <NavigationItems onMenuHandler={onHandlingDropMenu} open={openMenu} />
     </nav>
   );

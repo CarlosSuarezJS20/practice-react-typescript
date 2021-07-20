@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+html {
+  font-family: sans-serif;
+  min-width: 410px;
+  min-height: 100%;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+h1,
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+p {
+  line-height: 1.5rem;
+  font-weight: 100;
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+
+.section-center {
+  padding: 3rem 2rem;
+  max-width: 1180px;
+  margin: 0 auto;
+}
+/*# sourceMappingURL=index.css.map */
