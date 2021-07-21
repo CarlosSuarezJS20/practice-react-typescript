@@ -1,0 +1,123 @@
+.card {
+  background: #ffff;
+  -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  z-index: 99;
+  margin-bottom: 2rem;
+}
+
+.card__project-content {
+  padding: 0.3rem;
+}
+
+.card__project-content .image-container {
+  position: relative;
+}
+
+.card__project-content .image-container__project-image {
+  height: 15rem;
+  border-bottom: 1px solid black;
+}
+
+.card__project-content .image-container__tech-stack {
+  position: absolute;
+  background: rgba(0, 0, 0, 0.7);
+  padding: 0.3rem 0.5rem;
+  color: white;
+  top: 70%;
+  left: 0;
+  width: 120px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.card__project-content .image-container__tech-stack h3 {
+  font-weight: bold;
+  margin-bottom: 0.2rem;
+}
+
+.card__project-content .image-container__tech-stack .react-icon {
+  font-size: 1.2rem;
+  color: #04ece1;
+}
+
+.card__project-content .image-container__tech-stack .css-icon {
+  font-size: 1.2rem;
+  color: #007add;
+}
+
+.card__project-content .image-container__tech-stack .html-icon {
+  font-size: 1.2rem;
+  color: #f30707;
+}
+
+.card__project-content .image-container__tech-stack .js-icon {
+  font-size: 1.2rem;
+  color: #e9d204;
+}
+
+.card__project-content .image-container__tech-stack .nodejs-icon {
+  font-size: 1.2rem;
+  color: white;
+}
+
+.card__info-container {
+  padding: 1rem 2rem;
+}
+
+.card__info-container h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.card__info-container p {
+  font-size: 0.8rem;
+}
+
+.card__info-container .card-description {
+  height: 280px;
+}
+
+.card__info-container .learn-more-holder {
+  margin-top: 0.4rem;
+  text-transform: capitalize;
+  text-align: right;
+}
+
+.card__info-container .learn-more-holder__learn-more {
+  color: #9b3289;
+}
+
+.card__info-container .learn-more-holder__learn-more:hover {
+  color: #fa5adf;
+  text-decoration: underline;
+}
+
+.card__project-links-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  margin-bottom: 1rem;
+}
+
+.card__project-links-container a {
+  text-transform: capitalize;
+  line-height: 23px;
+  background: #5bc0de;
+  padding: 0.3rem 0.5rem;
+  margin: 0.2rem auto;
+  color: #ffff;
+  border-radius: 5px;
+  height: 30px;
+  -webkit-transition: all 0.5s linear;
+  transition: all 0.5s linear;
+}
+
+.card__project-links-container a:hover {
+  background: #ffff;
+  color: #5bc0de;
+  padding: 0.3rem 0.5rem;
+  border: 1px solid #5bc0de;
+}
+/*# sourceMappingURL=singleProject.css.map */

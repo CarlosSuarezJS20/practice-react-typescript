@@ -1,0 +1,65 @@
+@import "../../scss/variables", "../../scss/mixins";
+
+.surveybox-container {
+  background: rgba($black-color, 0.233);
+  padding: 1rem;
+  color: $primary-color;
+  text-transform: capitalize;
+  text-align: center;
+  line-height: 1.5rem;
+  border-radius: 10px;
+  @include screen-size("large-screen") {
+    width: 800px;
+    background: rgba($black-color, 0.432);
+    padding: 2rem;
+    color: $primary-color;
+    text-transform: capitalize;
+    line-height: 2rem;
+    border-radius: 10px;
+  }
+
+  &__loader-holder {
+    width: 80px;
+    margin: 4rem auto;
+  }
+
+  h2 {
+    text-align: center;
+    color: $secondary-brand-color;
+  }
+
+  select {
+    margin-left: 1rem;
+    background: $secondary-color;
+    border: none;
+    text-transform: capitalize;
+    width: 17px;
+  }
+
+  button {
+    background: none;
+    width: 30%;
+    margin-top: 1rem;
+    margin-left: 70%;
+    padding: 0.2rem;
+    color: $secondary-brand-color;
+    text-transform: capitalize;
+    font-size: 1em;
+    font-weight: bold;
+    border: 1px solid $secondary-brand-color;
+    border-radius: 6px;
+    transition: background-color 0.5s, color 0.5s;
+    cursor: pointer;
+
+    &:hover {
+      background: $secondary-brand-color;
+      color: $primary-color;
+    }
+  }
+
+  .total-visitors-answers {
+    text-align: right;
+    font-size: 0.8rem;
+    color: $secondary-color;
+  }
+}

@@ -1,19 +1,19 @@
 import React from "react";
-import "./projectsSection.css";
+import "./projectsSection.scss";
 import Project from "./singleProject/singleProject";
 import projectsArray from "../projectsSection/projects";
 
 const ProjectSection: React.FC = () => {
   return (
     <section className="projects-section">
-      <div className="project-intro" id="projects">
+      <div className="projects-section__project-intro" id="projects">
         <header>
           <h2>My lastest projects</h2>
-          <hr className="highlighter" />
+          <hr className="projects-section__highlighter" />
           <p>My progress and latest projects.</p>
         </header>
       </div>
-      <div className="projects-container">
+      <div className="projects-section__projects-container">
         {projectsArray.map((project) => (
           <Project
             key={project.id}

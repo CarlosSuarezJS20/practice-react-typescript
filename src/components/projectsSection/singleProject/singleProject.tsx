@@ -1,5 +1,5 @@
 import React from "react";
-import "./singleProject.css";
+import "./singleProject.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { NavLink } from "react-router-dom";
 
@@ -49,22 +49,26 @@ interface Project {
 const AboutSection: React.FC<Project> = (props) => {
   return (
     <article className="card">
-      <div className="project-content">
+      <div className="card__project-content">
         <div className="image-container">
-          <img src={props.image} alt="project" />
-          <div className="tech-stack">
+          <img
+            className="image-container__project-image"
+            src={props.image}
+            alt="project"
+          />
+          <div className="image-container__tech-stack">
             <h3>Tech stack</h3>
             {props.technologies.map((tech) => (
               <FontAwesomeIcon
                 key={tech.iconName}
                 icon={tech}
-                className={classesForIcons(tech)}
+                className={`${classesForIcons(tech)}`}
                 style={{ margin: "0 0.3rem" }}
               />
             ))}
           </div>
         </div>
-        <div className="card-info-container">
+        <div className="card__info-container">
           <h2>{props.title}</h2>
           <div className="card-description">
             <p>{props.firstDescription}</p>
@@ -77,13 +81,13 @@ const AboutSection: React.FC<Project> = (props) => {
                 pathname: `/project/${props.title}`,
                 state: { projectId: props.projectId },
               }}
-              className="learn-more"
+              className="learn-more-holder__learn-more"
             >
               want learn more?
             </NavLink>
           </div>
         </div>
-        <div className="project-links-container">
+        <div className="card__project-links-container">
           {props.linksPages.linkPage ? (
             <a
               href={props.linksPages.linkPage}

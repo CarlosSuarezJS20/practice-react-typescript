@@ -3,18 +3,11 @@ import React, { useRef, useState, useEffect } from "react";
 import Loader from "../UI/loader/loader";
 
 import axios from "axios";
-import "./surveybox.css";
+import "./surveybox.scss";
 
-const DB_URL: string =
-  "https://typescript-react-portfolio-default-rtdb.firebaseio.com";
-
-interface surveryAnswer {
-  id: number;
-  answers: string[];
-}
+const DB_URL = "https://typescript-react-portfolio-default-rtdb.firebaseio.com";
 
 const SurveyBox: React.FC = () => {
-  const [surveyUserAnswers, setSurveyUserAnswers] = useState<surveryAnswer>();
   const [loading, setLoading] = useState(false);
   const [numberOfAnswers, setNumberOfAnswers] = useState<number>(0);
 
@@ -24,12 +17,15 @@ const SurveyBox: React.FC = () => {
   const programmerTypeQRef = useRef<HTMLSelectElement>(null);
 
   useEffect(() => {
+    // This request allows to fetch all the responses and display the length in the UI
     axios
       .get(`${DB_URL}/users-answers.json`)
       .then((res) => {
         setNumberOfAnswers(Object.keys(res.data).length);
       })
-      .catch((err) => {});
+      .catch((err) => {
+        console.log(err);
+      });
   }, []);
 
   // To update the number in the form
@@ -67,8 +63,6 @@ const SurveyBox: React.FC = () => {
       ],
     };
 
-    setSurveyUserAnswers(newAnswer);
-
     axios
       .post(`${DB_URL}/users-answers.json`, newAnswer)
       .then((res) => {
@@ -84,7 +78,7 @@ const SurveyBox: React.FC = () => {
   return (
     <div className="surveybox-container">
       {loading ? (
-        <div className={"loader-holder"}>
+        <div className={"surveybox-container__loader-holder"}>
           <Loader />
         </div>
       ) : (
