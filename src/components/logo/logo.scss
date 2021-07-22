@@ -1,0 +1,30 @@
+@import "../../scss/mixins", "../../scss/variables";
+
+.logo {
+  display: flex;
+  text-transform: uppercase;
+  max-height: 50px;
+  @include screen-size("medium-size-screen") {
+    margin: 0.2rem 0;
+  }
+
+  &__cs-title {
+    color: $primary-brand-color;
+    border-right: 2px solid $primary-brand-color;
+    padding-right: 0.3rem;
+    margin-right: 0.3rem;
+    @include screen-size("medium-size-screen") {
+      padding-top: 0.5rem;
+      padding-right: 0.3rem;
+      margin-right: 0.3rem;
+    }
+  }
+
+  &__technologies-title {
+    color: $primary-color;
+    @include screen-size("medium-size-screen") {
+      padding-top: 0.5rem;
+      color: $primary-color;
+    }
+  }
+}

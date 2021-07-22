@@ -1,4 +1,4 @@
-@import "../../scss/variables";
+@import "../../scss/variables", "../../scss/mixins";
 
 .projects-section {
   background: rgba($secondary-color, 0.6);
@@ -18,7 +18,7 @@
 
   &__highlighter {
     margin: 0.5rem 0;
-    width: 280px;
+    @include title-decorator(280px, $secondary-brand-color);
   }
 
   &__project-intro {

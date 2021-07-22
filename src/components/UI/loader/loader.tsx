@@ -1,9 +1,9 @@
 import React from "react";
-import "./loader.css";
+import "./loader.scss";
 
 const MyProfileLoader: React.FC = () => {
   return (
-    <div className={"ldsEllipsis"}>
+    <div className="ldsEllipsis">
       <div></div>
       <div></div>
       <div></div>

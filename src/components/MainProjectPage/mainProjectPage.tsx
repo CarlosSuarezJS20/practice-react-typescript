@@ -1,5 +1,5 @@
 import React from "react";
-import "./mainProjectPage.css";
+import "./mainProjectPage.scss";
 import Toolbar from "../navigation/toolbar";
 import Footer from "../footer/footer";
 import projects from "../projectsSection/projects";
@@ -27,12 +27,12 @@ const Project: React.FC = () => {
     <React.Fragment>
       <Toolbar />
       <section className="project-main">
-        <header className="project-intro-title">
+        <header className="project-main__title">
           <h2>project overview:</h2>
           <hr className="overview-decoration" />
         </header>
-        <hr className="border-decorator" />
-        <div className="project-container">
+        <hr className="project-main__border-decorator" />
+        <div className="project-main__project-container">
           <div className="project-description">
             <p>{project!.description1}</p>
             <br />
@@ -40,7 +40,7 @@ const Project: React.FC = () => {
           </div>
           <div className="project-summary-image-links">
             <img src={project!.image} alt="project" />
-            <div className="project-links-holder">
+            <div className="project-summary-image-links__project-links-holder">
               {project?.links.linkPage ? (
                 <a
                   className="mainproject"
@@ -65,12 +65,11 @@ const Project: React.FC = () => {
         </div>
       </section>
       <section className="technologies-main-technologies">
-        <header className="technologies-intro-title">
-          <h2>approach and technologies:</h2>
-          <hr className="technologies-overview-decoration" />
+        <header className="technologies-main-technologies__technologies-intro-title">
+          <h2>Tech stack:</h2>
+          <hr className="technologies-border-decorator" />
         </header>
-        <hr className="technologies-border-decorator" />
-        <div className="technologies-container">
+        <div className="technologies-main-technologies__technologies-container">
           <div className="technologies-image-container">
             <img src={desktopImg} alt="project" />
           </div>
@@ -82,7 +81,7 @@ const Project: React.FC = () => {
             </ul>
           </div>
         </div>
-        <div className="go-back-btn-container">
+        <div className="technologies-main-technologies__go-back-btn-container">
           <button
             className="go-back-to-projects-btn"
             onClick={gobackToProjectsPage}

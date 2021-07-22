@@ -1,0 +1,40 @@
+.logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-transform: uppercase;
+  max-height: 50px;
+}
+
+@media (min-width: 600px) {
+  .logo {
+    margin: 0.2rem 0;
+  }
+}
+
+.logo__cs-title {
+  color: #fa5adf;
+  border-right: 2px solid #fa5adf;
+  padding-right: 0.3rem;
+  margin-right: 0.3rem;
+}
+
+@media (min-width: 600px) {
+  .logo__cs-title {
+    padding-top: 0.5rem;
+    padding-right: 0.3rem;
+    margin-right: 0.3rem;
+  }
+}
+
+.logo__technologies-title {
+  color: #ffff;
+}
+
+@media (min-width: 600px) {
+  .logo__technologies-title {
+    padding-top: 0.5rem;
+    color: #ffff;
+  }
+}
+/*# sourceMappingURL=logo.css.map */

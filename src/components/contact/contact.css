@@ -47,16 +47,6 @@
   text-transform: capitalize;
 }
 
-hr {
-  box-sizing: content-box;
-  height: 0;
-  overflow: visible;
-  border: none;
-  border-bottom: 3px solid #5bc0de;
-  margin: 1em auto;
-  width: 20%;
-}
-
 .contact-form {
   background: #fff;
   border-radius: 10px;

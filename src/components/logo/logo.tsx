@@ -1,5 +1,5 @@
 import React from "react";
-import "./logo.css";
+import "./logo.scss";
 import { NavLink } from "react-router-dom";
 
 interface Section {
@@ -15,11 +15,11 @@ const Logo: React.FC<Section> = (props) => {
 
   return (
     <NavLink to="/" className="logo">
-      <div className="cs-title">
+      <div className="logo__cs-title">
         <h2>cs</h2>
       </div>
       <div>
-        <h2 className="technologies-title">{logoTechnologiesTitle}</h2>
+        <h2 className="logo__technologies-title">{logoTechnologiesTitle}</h2>
       </div>
     </NavLink>
   );

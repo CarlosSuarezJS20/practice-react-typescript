@@ -1,0 +1,162 @@
+@import "../../scss/mixins", "../../scss/variables";
+
+.project-main {
+  background: $background-project-color;
+  padding: 7rem 1rem;
+  margin: 0 auto;
+
+  &__title {
+    text-align: center;
+
+    h2 {
+      text-transform: capitalize;
+      color: $primary-color;
+      font-weight: 500;
+    }
+
+    .overview-decoration {
+      @include title-decorator(30%, $primary-color);
+      border: none;
+      display: none;
+    }
+  }
+
+  &__border-decorator {
+    box-sizing: content-box;
+    height: 0;
+    overflow: visible;
+    border: none;
+    margin: 1em auto;
+    @include title-decorator(30%, $primary-color);
+    @include screen-size("medium-size-screen") {
+      display: none;
+    }
+  }
+
+  &__project-container {
+    margin: 0 auto;
+    max-width: 600px;
+    @include screen-size("medium-size-screen") {
+      display: flex;
+      margin-top: 3rem;
+      justify-content: space-between;
+      max-width: 1000px;
+    }
+
+    .project-description {
+      padding: 0.5rem 1rem;
+      text-align: center;
+      color: rgba($primary-color, 0.777);
+
+      @include screen-size("medium-size-screen") {
+        flex: 1 50%;
+        padding: 2.5rem 1rem;
+        border-left: 3px solid rgb(250, 90, 223);
+        text-align: left;
+      }
+    }
+
+    .project-summary-image-links {
+      padding: 1rem 1rem;
+      @include screen-size("medium-size-screen") {
+        flex: 1 50%;
+        padding: 1rem 0;
+      }
+
+      &__project-links-holder {
+        display: grid;
+        gap: 4rem;
+        padding: 1rem 1rem;
+        grid-template-columns: 1fr 1fr;
+
+        a {
+          color: $primary-color;
+          font-weight: bold;
+          text-transform: capitalize;
+          text-align: center;
+          background: $secondary-icon-brand-color;
+          border-radius: 5px;
+          padding: 0.7rem 1rem;
+          transition: background-color 0.5s, color 0.5s;
+          max-height: 37px;
+
+          &:hover {
+            color: $secondary-icon-brand-color;
+            text-transform: capitalize;
+            background: $primary-color;
+          }
+        }
+      }
+    }
+  }
+}
+/* section Technologies */
+
+.technologies-main-technologies {
+  background: $primary-color;
+  padding: 3rem 1rem;
+  margin: auto;
+
+  &__technologies-intro-title {
+    text-align: center;
+
+    h2 {
+      color: #2c3339;
+      font-weight: 500;
+    }
+
+    .technologies-border-decorator {
+      box-sizing: content-box;
+      height: 0;
+      overflow: visible;
+      border: none;
+      @include title-decorator(10%, $primary-brand-color);
+      margin: 1em auto;
+    }
+  }
+
+  &__technologies-container {
+    margin: 0 auto;
+    max-width: 600px;
+
+    .technologies-image-container {
+      margin-top: 2rem;
+    }
+
+    .technologies-content {
+      margin: 0.5rem;
+
+      ul {
+        width: 200px;
+        margin: 0 auto;
+        padding: 1rem;
+
+        li {
+          line-height: 1.5rem;
+        }
+      }
+
+      p {
+        text-align: center;
+      }
+    }
+  }
+
+  &__go-back-btn-container {
+    display: flex;
+    justify-content: flex-end;
+    width: 90%;
+    margin: 0 auto;
+
+    .go-back-to-projects-btn {
+      font-size: 1.2rem;
+      background: transparent;
+      color: $secondary-icon-brand-color;
+      border: none;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}

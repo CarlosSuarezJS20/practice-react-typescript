@@ -30,3 +30,8 @@
   height: 100vh;
   padding: 20vh 0.5rem 0;
 }
+
+@mixin title-decorator($decorator-width, $color) {
+  border-bottom: 3px solid $color;
+  width: $decorator-width;
+}

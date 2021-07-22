@@ -31,7 +31,7 @@
 }
 
 .main-nav .link-holder:active {
-  color: white;
+  color: #ffff;
 }
 
 .main-nav .link-holder__link {
@@ -42,10 +42,10 @@
 }
 
 .main-nav .link-holder__link.active {
-  color: white;
+  color: #ffff;
 }
 
 .main-nav .link-holder__link:active, .main-nav .link-holder__link:hover {
-  color: white;
+  color: #ffff;
 }
 /*# sourceMappingURL=navigationItems.css.map */

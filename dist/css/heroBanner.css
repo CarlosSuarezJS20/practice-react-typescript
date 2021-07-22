@@ -49,7 +49,7 @@
 @media (min-width: 890px) {
   .hero-header .hero-content h2 {
     font-size: 2rem;
-    color: white;
+    color: #ffff;
   }
 }
 
@@ -71,7 +71,7 @@
 @media (min-width: 890px) {
   .hero-header .hero-content p {
     margin-top: 1rem;
-    color: white;
+    color: #ffff;
     font-size: 1.5rem;
     line-height: 2.5rem;
   }
