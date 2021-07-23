@@ -1,5 +1,5 @@
 import React from "react";
-import "./aboutSection.css";
+import "./aboutSection.scss";
 import { Link } from "react-scroll";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -7,6 +7,7 @@ import {
   faJsSquare,
   faCss3Alt,
   faHtml5,
+  faSass,
 } from "@fortawesome/free-brands-svg-icons";
 
 import { faSitemap } from "@fortawesome/free-solid-svg-icons";
@@ -14,9 +15,9 @@ import { faSitemap } from "@fortawesome/free-solid-svg-icons";
 const AboutSection: React.FC = () => {
   return (
     <section className="about-section section-center">
-      <div className="about-content-holder" id="about">
+      <div className="about-section__about-content-holder" id="about">
         <h2>who i am...? </h2>
-        <hr />
+        <hr className="title-decoration" />
         <p>
           Hi, my name is Carlos. I’m a front-end developer passionate about
           technology and the cool things we can build with it.
@@ -36,21 +37,23 @@ const AboutSection: React.FC = () => {
             smooth={true}
             spy={true}
             duration={0}
-            className="learn-more-btn"
+            className="learn-more-btn-holder__learn-more-btn"
           >
             find out more
           </Link>
         </div>
       </div>
       <div className="skills-holder">
-        <h2>technologies and Skills</h2>
-        <hr />
-        <div className="skills-icons-holder">
+        <h2>Technologies and Skills</h2>
+        <hr className="title-decoration" />
+        <div className="skills-holder__skills-icons-holder">
           <FontAwesomeIcon icon={faReact} className="react-about" />
           <span className="language-skill">typeScript</span>
           <FontAwesomeIcon icon={faJsSquare} className="javaScritps-about" />
           <FontAwesomeIcon icon={faCss3Alt} className="css-about" />
           <FontAwesomeIcon icon={faHtml5} className="html-about" />
+          <FontAwesomeIcon icon={faSass} className="sass-about" />
+
           <div>
             <FontAwesomeIcon icon={faSitemap} className="faSitemaps-about" />
             <span className="language-skill">redux</span>

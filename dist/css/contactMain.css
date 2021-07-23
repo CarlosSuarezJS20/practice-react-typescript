@@ -1,0 +1,118 @@
+.contact-me {
+  text-align: center;
+  min-width: 400px;
+  padding: 4rem 5rem;
+}
+
+.header-holder h2 {
+  margin: 0.5rem;
+  font-weight: 300;
+  text-transform: capitalize;
+}
+
+.contact-icons-holder {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  width: 300px;
+  margin: 1.5rem auto;
+}
+
+.contact-icons-holder a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 70px;
+  width: 70px;
+  margin: 0.7rem;
+  padding: 0.5rem;
+  border: 2px solid #007add;
+  border-radius: 10px;
+  -webkit-transition: background-color 0.5s, color 0.5s ease-in-out;
+  transition: background-color 0.5s, color 0.5s ease-in-out;
+}
+
+.contact-icons-holder a:hover {
+  background: #007add;
+}
+
+.social-icon {
+  color: #007add;
+  font-size: 2rem;
+  -webkit-transition: background-color 0.5s, color 0.5s ease-in-out;
+  transition: background-color 0.5s, color 0.5s ease-in-out;
+}
+
+.contact-icons-holder a:hover > #social {
+  color: #ccc;
+}
+
+.contact-icons-holder a:hover > #social .social-icon:hover {
+  color: white;
+}
+
+.contact-me-text {
+  text-transform: capitalize;
+}
+
+.reason-container {
+  margin: 1rem 0.6rem;
+}
+
+.reasons-why-additional {
+  padding: 2rem 3rem;
+  margin: 0 auto;
+  max-width: 1170px;
+  text-align: center;
+}
+
+.reasons-why-additional h2 {
+  font-size: 2rem;
+  font-weight: 400;
+  text-transform: capitalize;
+}
+
+.why-icon-container {
+  width: 30px;
+  margin: 0.5rem auto;
+}
+
+.why-icons {
+  color: #9b3289;
+  font-size: 2.5rem;
+}
+
+.why-work-with-me {
+  padding: 3rem 1rem;
+  text-align: center;
+}
+
+.why-work-with-me p {
+  margin-top: 1rem;
+}
+
+@media (min-width: 890px) {
+  .contact-me {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
+  .why-work-with-me {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+/*# sourceMappingURL=contactMain.css.map */

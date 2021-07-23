@@ -4,7 +4,7 @@ import Footer from "../footer/footer";
 
 import axios from "axios";
 
-import "./contact.css";
+import "./contact.scss";
 
 const DB_URL: string =
   "https://typescript-react-portfolio-default-rtdb.firebaseio.com";
@@ -60,10 +60,10 @@ const ContactPage = () => {
     <React.Fragment>
       <Toolbar />
       <section className="connect">
-        <div className="backdrop"></div>
-        <div className="form-contanier">
+        <div className="connect__backdrop"></div>
+        <div className="connect__form-container">
           <h2>let's get in touch!</h2>
-          <hr />
+          <hr className="title-decoration" />
           <form className="contact-form" onSubmit={onSubmitBtnHandler}>
             <div className="form-group">
               <input
@@ -105,7 +105,7 @@ const ContactPage = () => {
             </div>
             <button
               disabled={
-                nameValue === "" && emailValue === "" && messageValue === ""
+                nameValue === "" || emailValue === "" || messageValue === ""
               }
               type="submit"
               className="submit-btn"

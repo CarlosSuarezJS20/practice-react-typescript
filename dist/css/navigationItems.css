@@ -14,16 +14,11 @@
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    background: rgba(0, 0, 0, 0.164);
     background: none;
     width: auto;
     position: static;
     padding: 0.5rem;
   }
-}
-
-.main-nav .open {
-  display: block;
 }
 
 .main-nav .link-holder {
@@ -47,5 +42,21 @@
 
 .main-nav .link-holder__link:active, .main-nav .link-holder__link:hover {
   color: #ffff;
+}
+
+.open {
+  display: block;
+}
+
+@media (min-width: 600px) {
+  .open {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background: none;
+    width: auto;
+    position: static;
+    padding: 0.5rem;
+  }
 }
 /*# sourceMappingURL=navigationItems.css.map */

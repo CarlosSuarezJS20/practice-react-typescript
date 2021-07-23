@@ -1,0 +1,97 @@
+@import "../../scss/mixins", "../../scss/variables";
+
+.about-section {
+  text-align: center;
+  @include screen-size("large-screen") {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  &__about-content-holder {
+    @include screen-size("large-screen") {
+      padding: 2rem;
+      min-width: 400px;
+    }
+
+    h2 {
+      text-transform: capitalize;
+      font-weight: 300;
+    }
+
+    p {
+      font-weight: 300;
+    }
+
+    .learn-more-btn-holder {
+      padding: 2rem 0;
+      &__learn-more-btn {
+        text-transform: uppercase;
+        color: $primary-brand-color;
+        &:hover {
+          color: $primary-brand-color;
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
+
+.skills-holder {
+  margin-top: 2rem;
+  @include screen-size("large-screen") {
+    margin-top: 5rem;
+    padding: 2rem 2rem;
+  }
+
+  &__skills-icons-holder {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3rem auto;
+    @include screen-size("large-screen") {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 3rem;
+    }
+
+    .language-skill {
+      text-transform: capitalize;
+      font-weight: bold;
+      font-size: 1.2rem;
+    }
+
+    .css-about {
+      font-size: 2rem;
+      color: rgb(0, 122, 221);
+    }
+
+    .react-about {
+      font-size: 2rem;
+      color: rgb(4, 236, 225);
+    }
+
+    .html-about {
+      font-size: 2rem;
+      color: rgb(243, 7, 7);
+    }
+
+    .javaScritps-about {
+      font-size: 2rem;
+      color: rgb(233, 210, 4);
+    }
+
+    .faSitemaps-about {
+      font-size: 1.6rem;
+      color: black;
+    }
+
+    .sass-about {
+      color: #c69;
+      font-size: 2rem;
+    }
+  }
+}
+
+.title-decoration {
+  @include title-decorator(15rem, $primary-icon-brand-color);
+  margin: 0.5rem auto 2rem auto;
+}

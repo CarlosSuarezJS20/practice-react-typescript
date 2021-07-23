@@ -11,15 +11,10 @@
   display: none;
   @include screen-size("medium-size-screen") {
     display: flex;
-    background: rgba(0, 0, 0, 0.164);
     background: none;
     width: auto;
     position: static;
     padding: 0.5rem;
-  }
-
-  .open {
-    display: block;
   }
 
   .link-holder {
@@ -44,5 +39,16 @@
         color: $primary-color;
       }
     }
+  }
+}
+
+.open {
+  display: block;
+  @include screen-size("medium-size-screen") {
+    display: flex;
+    background: none;
+    width: auto;
+    position: static;
+    padding: 0.5rem;
   }
 }

@@ -21,6 +21,14 @@
     @media (min-width: 890px) {
       @content;
     }
+  } @else if($screen-type == "larger-screen") {
+    @media (min-width: 1100px) {
+      @content;
+    }
+  } @else {
+    @media (min-width: 1400px) {
+      @content;
+    }
   }
 }
 

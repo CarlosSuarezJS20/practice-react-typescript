@@ -10,6 +10,7 @@ import {
   faJsSquare,
   faNodeJs,
   IconDefinition,
+  faSass,
 } from "@fortawesome/free-brands-svg-icons";
 
 // generates the classes
@@ -31,6 +32,9 @@ const classesForIcons = (icon: IconDefinition) => {
       break;
     case faNodeJs:
       iconClass = "nodejs-icon";
+      break;
+    case faSass:
+      iconClass = "sass-icon";
   }
   return iconClass;
 };

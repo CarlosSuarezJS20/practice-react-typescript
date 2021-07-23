@@ -31,7 +31,11 @@ const Toolbar: React.FC<ToolbarProps> = (props) => {
           duration={0}
           offset={-130}
           className="link-holder__link"
-          onClick={props.onMenuHandler}
+          onClick={() => {
+            if (props.open) {
+              props.onMenuHandler();
+            }
+          }}
         >
           about me
         </Link>
@@ -44,7 +48,11 @@ const Toolbar: React.FC<ToolbarProps> = (props) => {
           duration={0}
           offset={-100}
           className="link-holder__link"
-          onClick={props.onMenuHandler}
+          onClick={() => {
+            if (props.open) {
+              props.onMenuHandler();
+            }
+          }}
         >
           projects
         </Link>

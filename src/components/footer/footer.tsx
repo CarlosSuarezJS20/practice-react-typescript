@@ -1,5 +1,5 @@
 import React from "react";
-import "./footer.css";
+import "./footer.scss";
 import Logo from "../logo/logo";
 import { NavLink, useHistory } from "react-router-dom";
 import { Link } from "react-scroll";
@@ -13,7 +13,7 @@ const MainFooter = () => {
   return (
     <div>
       <footer className="mainFooter">
-        <section className="mainFooterTop">
+        <section className="mainFooter__mainFooterTop">
           <header>
             <h2 className="header-title-footer">Portfolio page</h2>
             <p className="title-description-footer">
@@ -35,12 +35,11 @@ const MainFooter = () => {
               )}
             </div>
           </header>
-
           <div className="item">
             <h3 className="footerTitle">star project:</h3>
             <p>
               <a
-                className="mainproject"
+                className="main-project"
                 href="https://budget-world-reactjs.web.app/"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -68,7 +67,7 @@ const MainFooter = () => {
           </p>
         </section>
 
-        <section className="bottomFooter">
+        <section className="mainFooter__bottomFooter">
           <Logo heroBanner />
 
           <div className="sectionTwo">
@@ -77,7 +76,7 @@ const MainFooter = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <FontAwesomeIcon className="socialIcon" icon={faLinkedin} />
+              <FontAwesomeIcon className="social-icon" icon={faLinkedin} />
             </a>
 
             <a
@@ -85,7 +84,7 @@ const MainFooter = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <FontAwesomeIcon className="socialIcon" icon={faGithub} />
+              <FontAwesomeIcon className="social-icon" icon={faGithub} />
             </a>
           </div>
         </section>

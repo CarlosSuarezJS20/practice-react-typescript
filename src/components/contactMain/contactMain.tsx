@@ -1,5 +1,5 @@
 import React from "react";
-import "./contactMain.css";
+import "./contactMain.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faCode,
@@ -16,7 +16,7 @@ import {
 const Toolbar: React.FC = () => (
   <React.Fragment>
     <section className="contact-me" id="contact-me">
-      <div className="contact-greet">
+      <div>
         <header className="header-holder">
           <h2>connect with me:</h2>
         </header>

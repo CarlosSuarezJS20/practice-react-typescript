@@ -61,6 +61,11 @@
   color: white;
 }
 
+.card__project-content .image-container__tech-stack .sass-icon {
+  font-size: 1.2rem;
+  color: #c69;
+}
+
 .card__info-container {
   padding: 1rem 2rem;
 }

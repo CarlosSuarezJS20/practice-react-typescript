@@ -1,0 +1,118 @@
+.about-section {
+  text-align: center;
+}
+
+@media (min-width: 890px) {
+  .about-section {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 890px) {
+  .about-section__about-content-holder {
+    padding: 2rem;
+    min-width: 400px;
+  }
+}
+
+.about-section__about-content-holder h2 {
+  text-transform: capitalize;
+  font-weight: 300;
+}
+
+.about-section__about-content-holder p {
+  font-weight: 300;
+}
+
+.about-section__about-content-holder .learn-more-btn-holder {
+  padding: 2rem 0;
+}
+
+.about-section__about-content-holder .learn-more-btn-holder__learn-more-btn {
+  text-transform: uppercase;
+  color: #fa5adf;
+}
+
+.about-section__about-content-holder .learn-more-btn-holder__learn-more-btn:hover {
+  color: #fa5adf;
+  text-decoration: underline;
+}
+
+.skills-holder {
+  margin-top: 2rem;
+}
+
+@media (min-width: 890px) {
+  .skills-holder {
+    margin-top: 5rem;
+    padding: 2rem 2rem;
+  }
+}
+
+.skills-holder__skills-icons-holder {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 3rem auto;
+}
+
+@media (min-width: 890px) {
+  .skills-holder__skills-icons-holder {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-top: 3rem;
+  }
+}
+
+.skills-holder__skills-icons-holder .language-skill {
+  text-transform: capitalize;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.skills-holder__skills-icons-holder .css-about {
+  font-size: 2rem;
+  color: #007add;
+}
+
+.skills-holder__skills-icons-holder .react-about {
+  font-size: 2rem;
+  color: #04ece1;
+}
+
+.skills-holder__skills-icons-holder .html-about {
+  font-size: 2rem;
+  color: #f30707;
+}
+
+.skills-holder__skills-icons-holder .javaScritps-about {
+  font-size: 2rem;
+  color: #e9d204;
+}
+
+.skills-holder__skills-icons-holder .faSitemaps-about {
+  font-size: 1.6rem;
+  color: black;
+}
+
+.skills-holder__skills-icons-holder .sass-about {
+  color: #c69;
+  font-size: 2rem;
+}
+
+.title-decoration {
+  border-bottom: 3px solid #007add;
+  width: 15rem;
+  margin: 0.5rem auto 2rem auto;
+}
+/*# sourceMappingURL=aboutSection.css.map */
