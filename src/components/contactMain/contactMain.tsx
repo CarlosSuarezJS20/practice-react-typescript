@@ -16,16 +16,14 @@ import {
 const Toolbar: React.FC = () => (
   <React.Fragment>
     <section className="contact-me" id="contact-me">
-      <div>
-        <header className="header-holder">
-          <h2>connect with me:</h2>
-        </header>
-        <hr className="header-line" />
+      <div className="contact-me__header-holder">
+        <h2>connect with me:</h2>
+        <hr className="title-highlighter" />
         <p className="contact-me-text">
-          want to get in touch? I enjoy sharing knowledge and finding new ideas.
+          Want to get in touch? I enjoy sharing knowledge and finding new ideas.
         </p>
       </div>
-      <div className="contact-icons-holder">
+      <div className="contact-me__contact-icons-holder">
         <a
           href="https://github.com/CarlosSuarezJS20"
           target="_blank"
@@ -62,11 +60,11 @@ const Toolbar: React.FC = () => (
         </a>
       </div>
     </section>
-    <div>
-      <div className="reasons-why-additional">
+    <section className="reason-why-section">
+      <div className="reason-why-section__additional">
         <div>
-          <h2>why work with me?</h2>
-          <hr className="header-line" />
+          <h2>Why work with me?</h2>
+          <hr className="title-highlighter" />
           <p>
             There are many things I could bring to your team, here are a few:
           </p>
@@ -76,7 +74,7 @@ const Toolbar: React.FC = () => (
             <div className="why-icon-container">
               <FontAwesomeIcon icon={faCode} className="why-icons" />
             </div>
-            <h2>technology enthusiast</h2>
+            <h2>tech enthusiast</h2>
             <p>
               I’m a strong believer that programmers are at the forefront of our
               current technology revolution
@@ -105,7 +103,7 @@ const Toolbar: React.FC = () => (
           </div>
         </div>
       </div>
-    </div>
+    </section>
   </React.Fragment>
 );
 
