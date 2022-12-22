@@ -16,24 +16,8 @@ import myPortfolio from "../../assets/images/myPortfolio-react.png";
 import codeWarsImg from "../../assets/images/kata.png";
 import dogImg from "../../assets/images/dogs.png";
 import livingRoom from "../../assets/images/livingRoom.png";
-import portfolio from "../../assets/images/Screenshot 2021-07-23 at 12.42.40.png";
 
 const projects = [
-  {
-    id: 1,
-    projectTitle: "New Portfolio page",
-    image: portfolio,
-    description1: `New portfolio page built with Typescript and React. Helped me to understand the fundamentals of Typescript and how to apply it in a React page.`,
-    description2: `Router page and Fully RESPONSIVE`,
-    languages: [faReact, faSass],
-    technologies: ["React", "TypeScript", "Hooks", "Axios", "Firebase"],
-    links: {
-      linkGitHub:
-        "https://github.com/CarlosSuarezJS20/film-typescript-hooks-project",
-
-      linkPage: "https://living-room-3a1ec.web.app/",
-    },
-  },
   {
     id: 2,
     projectTitle: "Living Room",
